@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Cabeçalho HTML-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exec005</title>
+   <!--Aqui Começa o CSS-->
+    <style>
+        body{
+            background-color: rgb(6, 86, 235);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+  <!--Fim do CSS-->
+</head>
+<!--Inicio do corpo HTML-->
+<body>
+    <h1>Iniciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem">Clique em mim</div>
+    <!--Início Js-->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0];
+        /*var d = window.document.getElementById('mensagem');
+        d.style.background = 'green';
+        d.innerText=('Estou Aguardando...')*/
+        var d = window.document.querySelector('div#mensagem');
+        d.style.Background = 'black';
+        
+    </script>
+    <!--Fim JS-->
+</body>
+<!--Fim do corpo HTML-->
+</html>

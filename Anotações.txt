@@ -1,0 +1,7 @@
+Pode-se criar uma folha de estilo no documento html através da tag <style></style>.
+Existe uma árvore de elementos dentro do Js chamada DOM (Document Object Model), para selecionar os elementos dentro do DOM usa-se...
+1 marca 
+2 ID 
+3 Nome
+4 Class
+5 Selector

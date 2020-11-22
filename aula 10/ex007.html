@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 007</title>
+    <style>
+        body{
+            background: rgb(24, 131, 202);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font: normal 20px arial ;            
+        }
+        h1{
+            color: #ffffff;
+        }
+        input{
+            font: bold 20pt arial;
+            width: 100px;
+            text-align:center;
+            padding: 5px;
+            
+        }
+        div#res{
+            font:bold 30px arial;
+            color:ivory;
+            margin: 20px;
+            padding: 10px;
+        }
+        div#color{
+            color: rgb(255, 253, 113);
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txn1" id="txn1"> +
+    <input type="number" name="txn2" id="txn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">RESULTADO</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txn1')
+            var tn2 = window.document.querySelector('input#txn2')
+            var res =window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre os valores ${n1} e ${n2} é igual à: <div id="color">${s}</div>`
+        }
+    </script>
+</body>
+</html>
